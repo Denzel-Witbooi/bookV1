@@ -28,7 +28,7 @@
 
         $_SESSION['username']   = $db_username;
         $_SESSION['user_role']  = $db_user_role;
-          header("Location: splash.php");
+          header("Location: ./BooksPage.php");
       } else {
         header("Location: index.php");
       }

@@ -307,7 +307,7 @@ function insert_book()
     $book_image = $_FILES['image']['name'];
     $book_image_temp = $_FILES['image']['tmp_name'];
 
-    move_uploaded_file($book_image_temp, "../images/$book_image");
+    //move_uploaded_file($book_image_temp, "/admin/images/$book_image");
 
     $query = "INSERT INTO tblbook(book_title, book_price, book_description,
               short_desc,book_image) ";
@@ -340,7 +340,7 @@ function update_book($the_book_id)
     $book_image_temp = $_FILES['image']['tmp_name'];
 
   // moving image from the temp location to a permanent location
-  move_uploaded_file($book_image_temp, "/images/$book_image");
+  //move_uploaded_file($book_image_temp, "/admin/images/$book_image");
 
   if (empty($book_image)) {
     $query = "SELECT * FROM tblbook WHERE book_id = $the_book_id ";
