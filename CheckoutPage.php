@@ -1,6 +1,6 @@
 <?php include "./includes/header.php";?>
 
-<nav class="navbar navbar-expand">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="index.php">BookHub</a>
@@ -16,6 +16,7 @@
     </ul>
   </div>
 </nav>
+
 
 <div class="container">
 

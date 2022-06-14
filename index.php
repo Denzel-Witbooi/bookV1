@@ -6,7 +6,7 @@ img {
 }
 </style>
 
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="index.php">BookHub</a>
@@ -22,6 +22,7 @@ img {
     </ul>
   </div>
 </nav>
+
     <div class="container">
     <img src="images/logo.svg" alt="Cinque Terre" width="1000" height="300">
     </div>  

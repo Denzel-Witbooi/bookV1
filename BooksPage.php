@@ -1,6 +1,6 @@
 <?php include "./includes/header.php";?>
 
-<nav class="navbar navbar-expand">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="index.php">BookHub</a>
@@ -44,6 +44,7 @@ $select_books = mysqli_query($connection, $query);
                                 <h4><?php echo $book_title?></h4>
                                 <p><?php echo $short_desc?></p>
                                 <h4><?php echo $book_price?></h4>
+                                <button class="btn btn-primary" href="Checkoutpage.php?c_id=<?php echo $book_id; ?>" >Buy Now <i class="fa fa-shopping-cart"></i></button>
                                 <button class="btn btn-primary" href="checkout.php?b_id=<?php echo $book_id; ?>" >Buy Now <i class="fa fa-shopping-cart"></i></button>
                             </div>
                         </div>
